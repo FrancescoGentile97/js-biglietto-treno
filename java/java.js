@@ -2,6 +2,9 @@ const now = new Date();
 const yearNow = now.getFullYear();
 const userName = prompt("Inserisci il tuo Nome");
 
+
+// per dopo provare a creare un alert all'inserimento dell'user name se viene inserito in forma numerica
+
 let userBirthYear = parseInt(prompt("Inserisci la tua data di nascita"));
 
 
@@ -29,9 +32,9 @@ const discount2 = 0.6;
 let finalPrice = price;
 
 if (userAge < 18) {
-  finalPrice = Math.round(price * discount2 * 100) / 100;
+  finalPrice = Math.round(price * discount1 * 100) / 100;
 } else if (userAge > 65) {
-  finalPrice = Math.round(price * discount4 * 100) / 100;
+  finalPrice = Math.round(price * discount2 * 100) / 100;
 }
 
 const result = document.getElementById("result");
